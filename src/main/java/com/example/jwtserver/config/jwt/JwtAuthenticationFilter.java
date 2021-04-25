@@ -27,3 +27,4 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         return super.attemptAuthentication(request, response);
     }
 }
+ 
