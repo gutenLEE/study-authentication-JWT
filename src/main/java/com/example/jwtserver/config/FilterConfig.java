@@ -8,7 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class FilterConfig {
+public class FilterConfig { // 스프링 시큐리티 chain에 커스텀 필터를 걸지 않고 따로 거는 방법이다.
+    // 스프링 시큐리티 필터가 커스텀 필터보다 먼저 실행된다.
 
     @Bean
     public FilterRegistrationBean<MyFilter1> filter1() {
